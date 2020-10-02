@@ -1,0 +1,16 @@
+
+p {
+    color: aqua;
+}
+p.error {
+    color: #e2a22b;
+}
+.success {
+    color: tomato;
+}
+.feadback {
+    border-width: 5px;
+    border-style: inset;
+    border-color: chartreuse;
+    border: 5px solid yellow
+}
