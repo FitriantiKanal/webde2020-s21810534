@@ -1,0 +1,10 @@
+span {
+    display: block;
+    display: inline;
+    margin: 20 px;
+}
+div {
+    display: inline;
+    margin: 2000 ;
+    padding: 20px;
+}
