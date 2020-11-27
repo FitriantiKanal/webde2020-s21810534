@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung BMI</title>
+    <script>scr="index1.js"</script>
+</head>
+<body>
+    <script>
+         function hitungImt(){
+        bb = document.getElementById("txtbb").value;
+        tb = document.getElementById("txttb").value;
+        t=(tb/100);
+        IMT = bb / (t*t) ;
+        document.getElementById("txtIMT").value =  IMT;
+    }
+    </script>
+   
+ <div id="hitung">
+     
+    <h1>Menghitung Body Mass Index</h1><br>
+ 
+    Berat Badan  :  <input type="text" id="txtbb" name="txtbb"><br/><br><br>
+    Tinggi Badan : <input type="text" id="txttb" name="txttb"><br/><br>
+    <input type="button" id="btnHitung" value="Hitung IMT"  onclick="hitungImt();"><br/><br>
+    IMT = <input type="text" id="txtIMT" disabled="true" name="txtIMT"><br>
+ </div>
+ 
+ </body>
+</html>
