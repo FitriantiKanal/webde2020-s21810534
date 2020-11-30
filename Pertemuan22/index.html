@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript</title>
+    <script>scr="index.js"</script>
+    <script language="JavaScript">
+       
+function calculateBmi() {
+var weight = document.bmiForm.weight.value
+var height = document.bmiForm.height.value
+
+if(weight > 0 && height > 0){	
+var finalBmi = weight/(height/100*height/100)
+    document.bmiForm.bmi.value = finalBmi
+var finalBmi = height/(weight/100*weight/100)
+    document.bmiForm.bmi.value = finalBmi
+if(finalBmi < 18.5){
+    document.bmiForm.meaning.value = "Kurus."
+}
+if(finalBmi > 18.5 && finalBmi < 25){
+    document.bmiForm.meaning.value = "Normal."
+}
+if(finalBmi > 25.0 && finalBmi < 29.9){
+    document.bmiForm.meaning.value = "Overweight."
+}
+if(finalBmi >  30.0){
+    document.bmiForm.meaning.value = "Obesitas"
+}
+}
+else{
+    alert("Please Fill in everything correctly")
+}
+}
+   </script>
+</head>
+<body>
+    <h1>Hitung Body Mass Index</h1><br>
+    <form name="bmiForm">
+        Berat Badan(kg): <input type="text" name="weight" size="10"><br />
+        Tinggi Badan(cm): <input type="text" name="height" size="10"><br />
+        <input type="button" value="Hitung BMI" onClick="hitungBmi()"><br />
+        BMI: <input type="text" name="bmi" size="10"><br />
+        Kondisi: <input type="text" name="meaning" size="25"><br />
+        <input type="reset" value="Reset" />
+        </form>
+ 
+ </body>
+</html>
